@@ -20,7 +20,7 @@ systemctl reboot
 flatpak install flathub -y gearlever notesnook onlyoffice io.gitlab.adhami3310.Converter org.gnome.Shotwell.HEIC org.gnome.Loupe.HEIC protonmail-bridge foliate flatseal extensionmanager protonvpn rustdesk io.ente.photos gdmsettings news_flash org.signal.Signal me.proton.Pass musicpod org.gnome.Totem org.gnome.Totem.Codecs
 
 ### Install RPM based packages and codecs
-rpm-ostree install evolution solaar adw-gtk3-theme yaru-icon-theme libavcodec-freeworld libheif-tools libheif-freeworld ffmpegthumbnailer gnome-boxes gnome-tweaks totem
+rpm-ostree install evolution solaar adw-gtk3-theme yaru-icon-theme libavcodec-freeworld libheif-tools libheif-freeworld ffmpegthumbnailer gnome-boxes gnome-tweaks
 
 ### Reboot
 systemctl reboot
