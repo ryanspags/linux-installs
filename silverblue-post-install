@@ -17,7 +17,7 @@ flatpak remove -y loupe extensions totem
 systemctl reboot
 
 ### Install Flathub Flatpak packages
-flatpak install flathub -y gearlever notesnook onlyoffice io.gitlab.adhami3310.Converter org.gnome.Shotwell.HEIC org.gnome.Loupe.HEIC protonmail-bridge foliate flatseal extensionmanager protonvpn rustdesk io.ente.photos gdmsettings news_flash org.signal.Signal me.proton.Pass musicpod org.gnome.Totem org.gnome.Totem.Codecs
+flatpak install flathub -y gearlever notesnook onlyoffice io.gitlab.adhami3310.Converter org.gnome.Shotwell.HEIC org.gnome.Loupe.HEIC protonmail-bridge foliate flatseal extensionmanager protonvpn rustdesk io.ente.photos gdmsettings news_flash org.signal.Signal me.proton.Pass musicpod org.gnome.Totem org.gnome.Totem.Codecs org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
 
 ### Add Brave Browser Repo
 run0 curl -fsSLo /etc/yum.repos.d/brave-browser.repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
