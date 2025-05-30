@@ -23,7 +23,7 @@ flatpak install flathub -y gearlever notesnook onlyoffice io.gitlab.adhami3310.C
 run0 curl -fsSLo /etc/yum.repos.d/brave-browser.repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
 
 ### Install RPM based packages and codecs
-rpm-ostree install evolution solaar adw-gtk3-theme yaru-icon-theme libavcodec-freeworld libheif-tools libheif-freeworld ffmpegthumbnailer gnome-boxes gnome-tweaks brave-browser
+rpm-ostree install evolution solaar adw-gtk3-theme yaru-icon-theme libavcodec-freeworld libheif-tools libheif-freeworld ffmpegthumbnailer gnome-boxes gnome-tweaks brave-browser openssl
 
 ### Reboot
 systemctl reboot
