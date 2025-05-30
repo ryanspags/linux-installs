@@ -19,8 +19,11 @@ systemctl reboot
 ### Install Flathub Flatpak packages
 flatpak install flathub -y gearlever notesnook onlyoffice io.gitlab.adhami3310.Converter org.gnome.Shotwell.HEIC org.gnome.Loupe.HEIC protonmail-bridge foliate flatseal extensionmanager protonvpn rustdesk io.ente.photos gdmsettings news_flash org.signal.Signal me.proton.Pass musicpod org.gnome.Totem org.gnome.Totem.Codecs
 
+### Add Brave Browser Repo
+run0 curl -fsSLo /etc/yum.repos.d/brave-browser.repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+
 ### Install RPM based packages and codecs
-rpm-ostree install evolution solaar adw-gtk3-theme yaru-icon-theme libavcodec-freeworld libheif-tools libheif-freeworld ffmpegthumbnailer gnome-boxes gnome-tweaks
+rpm-ostree install evolution solaar adw-gtk3-theme yaru-icon-theme libavcodec-freeworld libheif-tools libheif-freeworld ffmpegthumbnailer gnome-boxes gnome-tweaks brave-browser
 
 ### Reboot
 systemctl reboot
