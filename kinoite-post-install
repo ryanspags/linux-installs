@@ -1,0 +1,41 @@
+### RPM Fusion
+sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+### Flatpak support
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+### Reboot
+systemctl reboot
+
+### Install Flathub Flatpak packages
+flatpak install flathub -y \
+onlyoffice \
+protonmail-bridge \
+flatseal \
+protonvpn \
+rustdesk \
+io.ente.photos \
+org.signal.Signal \
+me.proton.Pass
+
+### Add Brave Browser Repo
+run0 curl -fsSLo /etc/yum.repos.d/brave-browser.repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+
+### Install RPM based packages and codecs
+rpm-ostree install \
+libavcodec-freeworld \
+libheif-tools \
+libheif-freeworld \
+ffmpegthumbnailer \
+brave-browser \
+vim \
+git
+
+### Reboot
+systemctl reboot
+
+### Download AppImages
+# Filen: 
+wget https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.AppImage
+
+# Cider: go to https://cidercollective.itch.io/cider/
