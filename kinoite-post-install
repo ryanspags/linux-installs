@@ -36,7 +36,8 @@ libheif-freeworld \
 ffmpegthumbnailer \
 brave-browser \
 kontact \
-
+solaar \
+solaar-udev \
 vim \
 git
 
