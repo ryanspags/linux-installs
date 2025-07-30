@@ -7,6 +7,14 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 ### Reboot
 systemctl reboot
 
+### Switch to unversioned RPM Fusion
+rpm-ostree update \
+--uninstall rpmfusion-free-release \
+--uninstall rpmfusion-nonfree-release \
+--install rpmfusion-free-release \
+--install rpmfusion-nonfree-release
+
+
 ### Install Flathub Flatpak packages
 flatpak install flathub -y \
 onlyoffice \
@@ -27,6 +35,8 @@ libheif-tools \
 libheif-freeworld \
 ffmpegthumbnailer \
 brave-browser \
+kontact \
+
 vim \
 git
 
