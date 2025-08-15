@@ -17,7 +17,7 @@ systemctl reboot
 
 ### Install Flathub Flatpak packages
 flatpak install flathub -y \
-onlyoffice \
+libreoffice \
 protonmail-bridge \
 protonvpn \
 rustdesk \
@@ -34,6 +34,7 @@ libavcodec-freeworld \
 libheif-tools \
 libheif-freeworld \
 ffmpegthumbnailer \
+gwenview \
 brave-browser \
 kontact \
 solaar \
