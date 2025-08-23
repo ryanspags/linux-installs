@@ -15,6 +15,9 @@ rpm-ostree update \
 --install rpmfusion-nonfree-release \
 systemctl reboot
 
+### Remove Flatpaks
+flatpak remove gwenview -y
+
 ### Install Flathub Flatpak packages
 flatpak install flathub -y \
 libreoffice \
