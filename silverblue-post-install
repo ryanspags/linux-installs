@@ -30,12 +30,15 @@ flatseal \
 extensionmanager \
 protonvpn \
 rustdesk \
-io.ente.photos \
+evolution \
 gdmsettings \
 news_flash \
 org.signal.Signal \
 me.proton.Pass \
 musicpod \
+com.brave.Browser \
+io.github.pwr_solaar.solaar \
+org.gnome.boxes \
 org.gnome.Totem \
 org.gnome.Totem.Codecs \
 org.gtk.Gtk3theme.adw-gtk3 \
@@ -46,20 +49,11 @@ run0 curl -fsSLo /etc/yum.repos.d/brave-browser.repo https://brave-browser-rpm-r
 
 ### Install RPM based packages and codecs
 rpm-ostree install \
-evolution \
-solaar \
-solaar-udev \
-input-remapper \
 adw-gtk3-theme \
-yaru-icon-theme \
 libavcodec-freeworld \
 libheif-tools \
 libheif-freeworld \
 ffmpegthumbnailer \
-gnome-boxes \
-gnome-tweaks \
-brave-browser \
-openssl \
 vim
 
 ### Reboot
