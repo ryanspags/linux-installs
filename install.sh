@@ -25,3 +25,4 @@ zsh \
 git
 
 echo "Done."
+echo "Reboot system with: systemctl reboot"
