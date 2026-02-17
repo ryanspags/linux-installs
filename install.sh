@@ -22,7 +22,8 @@ echo "Adding base packages..."
 rpm-ostree install \
 vim \
 zsh \
-git
+git \
+tmux
 
 echo "Done."
 echo "Reboot system with: systemctl reboot"
