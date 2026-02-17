@@ -21,6 +21,7 @@ echo "Done."
 echo "Adding base packages..."
 rpm-ostree install \
 vim \
-zsh
+zsh \
+git
 
 echo "Done."
