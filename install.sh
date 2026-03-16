@@ -9,21 +9,19 @@ dconf write /org/gnome/Ptyxis/Profiles/$(dconf read /org/gnome/Ptyxis/default-pr
 
 echo "Adding repositories for rpmfusion and flathub..."
 
-### RPMFusion
+### RPMFusion Repo
 sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-### Flatpak
+### Flatpak Repo
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+### Brave Browser Repo
+run0 curl -fsSLo /etc/yum.repos.d/brave-browser.repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
 
 echo "Done." 
 
-
-echo "Adding base packages..."
-rpm-ostree install \
-vim \
-zsh \
-git \
-tmux
+### Fix gdm scaling
+sudo cp ~/.config/monitors.xml /var/lib/gdm/seat0/config/
 
 echo "Done."
 echo "Reboot system with: systemctl reboot"
