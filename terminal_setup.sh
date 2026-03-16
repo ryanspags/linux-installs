@@ -1,7 +1,7 @@
 #! /bin/bash
 
 ### Install zsh
-sudo apt install zsh-autosuggestions zsh-syntax-highlighting zsh
+sudo dnf install vim zsh-autosuggestions zsh-syntax-highlighting zsh
 
 ### Install Oh My ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
