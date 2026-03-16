@@ -1,12 +1,11 @@
 #! /bin/bash
 
 # Remove Unwanted Flatpaks from Fedora Flatpak
-flatpak remove -y loupe extensions totem
+flatpak remove -y loupe extensions totem org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.Connections org.gnome.Contacts org.gnome.Extensions org.gnome.Logs org.gnome.Maps org.gnome.NautilusPreviewer org.gnome.Papers org.gnome.Snapshot org.gnome.Weather org.gnome.baobab org.gnome.clocks org.gnome.font-viewer
 
 # Install Flatpaks from Flathub
 flatpak install flathub -y \
 gearlever \
-com.brave.Browser \
 notesnook \
 onlyoffice \
 io.gitlab.adhami3310.Converter \
@@ -18,19 +17,34 @@ flatseal \
 extensionmanager \
 protonvpn \
 rustdesk \
-gdmsettings \
 news_flash \
 org.signal.Signal \
-me.proton.Pass \
-musicpod \
-io.github.pwr_solaar.solaar \
-page.tesk.Refine \
 org.gnome.Evolution \
 org.gnome.Boxes \
-org.gnome.Totem \
-org.gnome.Totem.Codecs \
 org.gtk.Gtk3theme.adw-gtk3 \
 org.gtk.Gtk3theme.adw-gtk3-dark \
-com.synology.SynologyDrive \
-com.synology.synology-note-station \
-com.synology.SynologyAssistant
+org.gnome.Calculator \
+org.gnome.Calendar \
+org.gnome.Characters \
+org.gnome.Connections \
+org.gnome.Contacts \
+org.gnome.Extensions \
+org.gnome.Logs \
+org.gnome.Maps \
+org.gnome.NautilusPreviewer \
+org.gnome.Papers \
+org.gnome.Snapshot \
+org.gnome.Weather \
+org.gnome.baobab \
+org.gnome.clocks \
+org.gnome.font-viewer
+
+# Install RPM based packages and codecs
+rpm-ostree install \
+brave-browser \
+gnome-tweaks \
+adw-gtk3-theme \
+libavcodec-freeworld \
+libheif-tools \
+libheif-freeworld \
+ffmpegthumbnailer
