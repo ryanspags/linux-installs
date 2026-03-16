@@ -42,6 +42,7 @@ org.gnome.font-viewer
 # Install RPM based packages and codecs
 rpm-ostree install \
 brave-browser \
+tailscale \
 gnome-tweaks \
 adw-gtk3-theme \
 libavcodec-freeworld \
