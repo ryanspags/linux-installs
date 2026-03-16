@@ -7,7 +7,7 @@ hostnamectl set-hostname $hostname
 echo "Setting terminal transparency to $opacity"
 dconf write /org/gnome/Ptyxis/Profiles/$(dconf read /org/gnome/Ptyxis/default-profile-uuid | tr -d "'")/opacity 0.$opacity
 
-echo "Adding repositories for rpmfusion and flathub..."
+echo "Adding repositories..."
 
 ### RPMFusion Repo
 sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -17,6 +17,9 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 ### Brave Browser Repo
 run0 curl -fsSLo /etc/yum.repos.d/brave-browser.repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+
+### Tailscale
+run0 curl -fsSLo /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/fedora/tailscale.repo   
 
 echo "Done." 
 
