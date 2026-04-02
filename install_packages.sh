@@ -1,8 +1,5 @@
 #! /bin/bash
 
-# Remove Unwanted Flatpaks from Fedora Flatpak
-flatpak remove -y loupe extensions totem org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.Connections org.gnome.Contacts org.gnome.Extensions org.gnome.Logs org.gnome.Maps org.gnome.NautilusPreviewer org.gnome.Papers org.gnome.Snapshot org.gnome.Weather org.gnome.baobab org.gnome.clocks org.gnome.font-viewer
-
 # Replace Fedora's flatpaks with packages from flathub 
 flatpak install --reinstall flathub $(flatpak list --app-runtime=org.fedoraproject.Platform --columns=application | tail -n +1 )
 
