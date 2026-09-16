@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Proton Mail Bridge
+Comment=Proton Mail Bridge
+Exec=flatpak run ch.protonmail.protonmail-bridge --no-window
+Terminal=false
+X-GNOME-Autostart-enabled=true
